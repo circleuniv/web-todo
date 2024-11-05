@@ -3,6 +3,8 @@ import functions
 
 
 todos=functions.get_todos()
+st.set_page_config(layout="wide")
+
 def add_todo():
     # 取得表單值, 必須寫session_state抓表單key
     newdo=st.session_state["newitem"].strip()
@@ -17,7 +19,8 @@ def add_todo():
 
 st.title("Web ToDo App")
 st.subheader("This is my todo app.")
-st.write("This app is to increase your productivity!")
+st.write("This app is to increase your <u>productivity!</u>",
+         unsafe_allow_html=True)
 
 for index,chk_item in enumerate(todos):
     chk_value=st.checkbox(chk_item,key=chk_item)
