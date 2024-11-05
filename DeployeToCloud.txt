@@ -1,0 +1,8 @@
+1.optimize code at final
+2.Confirm that the project only requires the required programs
+  and files, and move any unnecessary ones outside
+3. create a requirements.txt by command in Terminal:
+(venv) pip freeze > requirements.txt
+provide the cloud to automatically install the package
+based on this file
+
