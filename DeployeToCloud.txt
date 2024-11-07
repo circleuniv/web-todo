@@ -6,3 +6,22 @@
 provide the cloud to automatically install the package
 based on this file
 
+Terminal in virtual environment:
+.\.venv\Scripts\Activate
+
+Back to general envirnoment:
+deactivate
+---
+note: After OS. RESTORE, I chnaged disk position.
+Now, I need run this app, the message told me .venv Script NOT Found.
+Well, we need re-install .venv and some requirement package:
+
+STEP1 remove old .venv:
+Remove-Item -Recurse -Force .\.venv
+
+STEP2 install new .venv:
+python -m venv .venv
+
+STEP3 install requirement package:
+.\.venv\Scripts\Activate
+pip install -r requirements.txt
